@@ -1,0 +1,17 @@
+
+:root {
+    --gradient: linear-gradient(75deg, #e20c0c, yellow, white, black);
+}
+body {
+    background-image: var(--gradient);
+    background-size: 200%; /* Increase the size to allow movement */
+    animation: Gradient-animation 3s infinite alternate; /* Slower animation for smoother effect */
+}
+@keyframes Gradient-animation {
+    0% {
+        background-position: 0% 50%; /* Start from the left */
+    }
+    100% {
+        background-position: 100% 50%; /* Move to the right */
+    }
+}
